@@ -60,19 +60,46 @@
 
   div {
     height: 50px;
-    border: 1px solid red;
+    border: 0px solid red;
   }
 
-  .row:before {
+.row:before {
     display: table;
     content: "";
   }
   
-  .row:after {
+.row:after {
     display: table;
     content: "";
     clear: both;
   } 
+
+nav {
+    background-color: #DCD8D8;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a { 
+    font-family: 'Roboto';
+    line-height: 50px;
+    text-decoration: none;
+    color: #0B0202;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 18px;
+}
 
   * {
     -webkit-box-sizing: border-box;
